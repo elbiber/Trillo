@@ -44,9 +44,19 @@ Grey dark 3: #999
 
 }
 
+$bp-largest: 75rem; // 1200px
+$bp-large: 68.75rem; // 1100px
+$bp-medium: 56.25rem; // 1100px
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+        
+    
 }
 
 body {
